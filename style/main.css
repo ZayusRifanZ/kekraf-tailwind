@@ -7,3 +7,9 @@
 @import "tailwindcss/utilities";
 
 @import "_font.css";
+
+@import "component/navbar.css";
+
+body {
+  min-height: 2000px;
+}

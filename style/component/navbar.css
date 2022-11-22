@@ -1,0 +1,47 @@
+/* nav.header {
+  @apply border-b-2 border-solid border-b-slate-200;
+} */
+
+/* .header .navbar {
+  @apply container flex max-w-full items-center justify-between  py-4 md:justify-start;
+} */
+
+.header .humberger {
+  @apply block cursor-pointer space-y-1 md:hidden;
+}
+
+.header .humberger .bar {
+  @apply block h-0.5 w-6 rounded-full bg-primary;
+}
+
+.header .nav-menu {
+  /* md (default 768px) media query  */
+  @media (min-width: 768px) {
+    @apply ml-16 flex space-x-8;
+  }
+}
+
+/* .header .nav-menu .nav-item {
+  @apply mb-3;
+} */
+/* .header .nav-menu .nav-item .nav-link {} */
+
+.header .navbar-menu-md {
+  @media (min-width: 768px) {
+    @apply static flex bg-opacity-0 bg-none py-0;
+  }
+}
+
+.header .nav-menu-main.active {
+  @apply left-0;
+}
+
+.header .humberger.active .bar:nth-child(2) {
+  @apply opacity-0;
+}
+.header .humberger.active .bar:nth-child(1) {
+  @apply translate-y-[6px] rotate-45;
+}
+.header .humberger.active .bar:nth-child(3) {
+  @apply -translate-y-[6px] -rotate-45;
+}
