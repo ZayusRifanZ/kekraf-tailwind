@@ -1,5 +1,5 @@
 nav.header {
-  @apply fixed z-50 w-full;
+  @apply fixed top-0 z-50 w-full;
 }
 
 .header .navbar {
