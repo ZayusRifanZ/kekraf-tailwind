@@ -8,12 +8,15 @@
 
     <!-- tailwindcss style -->
     <link rel="stylesheet" href="../style/main-output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="header navbar-fixed-top fixed z-50 w-full">
-      <div
-        class="navbar container flex max-w-full items-center justify-between py-4 md:justify-start"
-      >
+    <nav
+      class="header navbar-fixed-top"
+      data-aos="fade-down"
+      data-aos-delay="50"
+    >
+      <div class="navbar">
         <a href="index.html">
           <img src="../images/logo.svg" alt="logo kekraf" />
         </a>
@@ -45,20 +48,11 @@
                 class="search-product"
               />
             </form>
-            <li>
-              <a
-                class="block rounded-md p-2 text-center text-primary outline outline-1 outline-primary hover:bg-primary hover:text-white md:inline"
-                href="#"
-              >
-                Daftar
-              </a>
+            <li class="nav-item">
+              <a class="btn-nav btn-outline-primary" href="#"> Daftar </a>
             </li>
-            <li>
-              <a
-                class="block rounded-md bg-primary p-2 text-center text-white hover:opacity-75 focus:ring-1 focus:ring-yellow-300 md:inline"
-                href="#"
-                >Masuk</a
-              >
+            <li class="nav-item">
+              <a class="btn-nav btn-primary" href="#">Masuk</a>
             </li>
           </ul>
         </div>
@@ -186,36 +180,10 @@
       </section>
     </div>
 
+    <script src="../scripts/navbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      // function for icon humberger menu
-      const navMenu = document.querySelector(".nav-menu-main");
-      const humbergerIcon = document.querySelector(".humberger");
-      const navTop = document.querySelector(".navbar-fixed-top");
-
-      humbergerIcon.addEventListener("click", mobileMenu);
-
-      function mobileMenu() {
-        humbergerIcon.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      }
-
-      // function scroll navbar active class ".scrolled"
-      window.onscroll = function () {
-        scrolledFunction();
-      };
-
-      function scrolledFunction() {
-        if (
-          document.body.scrollTop > 80 ||
-          document.documentElement.scrollTop > 80
-        ) {
-          navTop.classList.add("scrolled");
-        } else {
-          if (navMenu.classList.contains("active") == false) {
-            navTop.classList.remove("scrolled");
-          }
-        }
-      }
+      AOS.init();
     </script>
   </body>
 </html>

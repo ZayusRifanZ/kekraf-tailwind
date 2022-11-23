@@ -1,0 +1,8 @@
+/* navbar button */
+.btn-nav.btn-outline-primary {
+  @apply block rounded-md p-2 text-center text-primary outline outline-1 outline-primary hover:bg-primary hover:text-white md:inline;
+}
+
+.btn-nav.btn-primary {
+  @apply block rounded-md bg-primary p-2 text-center text-white hover:opacity-75  md:inline;
+}

@@ -9,6 +9,7 @@
 @import "_font.css";
 
 @import "component/navbar.css";
+@import "component/button.css";
 
 body {
   min-height: 2000px;
