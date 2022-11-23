@@ -12,6 +12,10 @@ nav.header {
   } */
 }
 
+.navbar-fixed-top.scrolled input.search-product {
+  @apply ring-1 ring-greyBlue;
+}
+
 .header .humberger {
   @apply block cursor-pointer space-y-1 md:hidden;
 }
@@ -73,7 +77,7 @@ nav.header {
   @apply fixed top-20 -left-full mb-4 w-full items-center justify-between space-y-3 bg-white bg-opacity-80 py-4 px-6 backdrop-blur-sm transition-all delay-300 ease-in-out;
 
   @media (min-width: 768px) {
-    @apply static mb-0 flex bg-opacity-0 bg-none py-0;
+    @apply static mb-0 flex bg-opacity-0 bg-none py-0 pr-0 backdrop-filter-none;
   }
 }
 
