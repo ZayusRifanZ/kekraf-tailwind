@@ -28,7 +28,7 @@ nav.header {
 }
 
 .header .nav-menu-link .nav-item {
-  @apply mb-2  py-1 text-center;
+  @apply mb-2  py-1 text-soft-greyBlue;
 
   &:hover {
     @apply rounded-md border-[1px] border-solid border-primary;
@@ -44,8 +44,12 @@ nav.header {
   }
 }
 
+.nav-item.active {
+  @apply text-primary !important;
+}
+
 .header .nav-menu-link .nav-item .nav-link {
-  @apply font-normal text-soft-greyBlue;
+  @apply font-normal;
   &:hover {
     @apply text-primary;
   }
