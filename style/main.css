@@ -11,6 +11,8 @@
 @import "component/navbar.css";
 @import "component/button.css";
 
+@import "pages/home.css";
+
 body {
   min-height: 2000px;
 }

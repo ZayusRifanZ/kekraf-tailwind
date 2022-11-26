@@ -1,0 +1,60 @@
+.page-content.page-home section h5 {
+  @apply mt-8 mb-4 text-xl font-semibold text-primary;
+}
+
+/* kekraf category product */
+.page-home .kekraf-category-product div.row-grid {
+  @apply grid grid-cols-3 gap-7  md:grid-cols-4 lg:grid-cols-6;
+}
+.page-home .kekraf-category-product div.row-grid a.component-categories {
+  @apply block rounded-md border-2 border-solid border-slate-300 pt-3 pb-2 hover:bg-soft-greyBlue/40 hover:shadow-md;
+}
+.page-home
+  .kekraf-category-product
+  div.row-grid
+  a.component-categories
+  div.category-icon {
+  @apply flex items-center justify-center hover:scale-110;
+}
+.page-home
+  .kekraf-category-product
+  div.row-grid
+  a.component-categories
+  p.category-text {
+  @apply text-center text-soft-greyBlue hover:text-white;
+}
+
+/* kekraf product */
+.page-home .kekraf-new-products div.row-grid {
+  @apply mt-3 grid grid-cols-3 gap-5 md:grid-cols-4 lg:grid-cols-6;
+}
+
+.page-home
+  .kekraf-new-products
+  div.row-grid
+  a.component-products
+  div.product-thumnail {
+  @apply flex h-44 max-h-52 overflow-hidden rounded-md shadow-sm;
+}
+.page-home
+  .kekraf-new-products
+  div.row-grid
+  a.component-products
+  div.product-thumnail
+  img.product-image {
+  @apply w-full object-cover transition-all duration-1000 ease-in-out hover:scale-110;
+}
+.page-home
+  .kekraf-new-products
+  div.row-grid
+  a.component-products
+  div.product-text {
+  @apply mt-3 overflow-hidden text-justify text-base text-primary line-clamp-2 hover:line-clamp-none;
+}
+.page-home
+  .kekraf-new-products
+  div.row-grid
+  a.component-products
+  div.product-price {
+  @apply text-base font-semibold text-secondary;
+}
