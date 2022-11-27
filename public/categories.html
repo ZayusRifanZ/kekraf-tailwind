@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Ketegori</title>
 
     <!-- tailwindcss style -->
     <link rel="stylesheet" href="../style/main-output.css" />
@@ -31,10 +31,10 @@
 
         <div class="nav-menu-main">
           <ul class="nav-menu-link">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a href="index.html" class="nav-link">Beranda </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a href="categories.html" class="nav-link"> Kategori </a>
             </li>
             <li class="nav-item">
@@ -65,102 +65,7 @@
 
     <div class="page-content page-home">
       <!-- slide  -->
-      <section class="kekraf-carousel" data-aos="zoom-in" data-aos-delay="200">
-        <div class="container max-w-full">
-          <div
-            class="relative mx-auto w-full"
-            x-data="{
-              activeSlide: 1,
-              slides: [
-                  { id: 1, title: 'Hello 1', img: '../images/banner.jpg'},
-                  { id: 2, title: 'Hello 2', img: '../images/banner.jpg'},
-                  { id: 3, title: 'Hello 3', img: '../images/banner.jpg'},
-                  { id: 4, title: 'Hello 4', img: '../images/banner.jpg'},
-                  { id: 5, title: 'Hello 5', img: '../images/banner.jpg'},
-                ],
-                loop(){
-                    setInterval (() => {this.activeSlide = this.activeSlide === 5 ? 1 : this.activeSlide +1 }, 5000)
-                  }
-              }"
-            x-init="loop"
-          >
-            <!-- data loop -->
-            <template x-for="slide in slides" :key="slide.id">
-              <div
-                x-show="activeSlide === slide.id"
-                class="flex items-center overflow-hidden rounded-lg bg-slate-500 text-white"
-                x-transition:enter.duration.500ms
-              >
-                <span class="sr-only absolute" x-text="slide.title"></span>
-                <img :src="slide.img" alt="" class="w-full" />
-              </div>
-            </template>
 
-            <!-- back and next -->
-            <div class="absolute top-1/2 w-full">
-              <div class="mx-4 flex items-center justify-between">
-                <button
-                  x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide -1"
-                  class="flex h-12 w-12 items-center justify-center rounded-full bg-white bg-opacity-50"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="h-5 w-5 text-white dark:text-gray-800 sm:h-6 sm:w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M15 19l-7-7 7-7"
-                    ></path>
-                  </svg>
-                </button>
-
-                <button
-                  x-on:click="activeSlide = activeSlide === slides.length ?  1 : activeSlide +1"
-                  class="flex h-12 w-12 items-center justify-center rounded-full bg-white bg-opacity-50"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="h-5 w-5 text-white dark:text-gray-800 sm:h-6 sm:w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <!-- button -->
-            <div class="absolute left-1/2 bottom-2 -ml-[60px] flex px-2 py-2">
-              <template x-for="slide in slides" :key="slide.id">
-                <button
-                  class="mx-2 mt-4 mb-2 h-2 w-2 flex-1 overflow-hidden rounded-full bg-slate-200 transition-colors duration-200 ease-out hover:bg-slate-600 hover:shadow-lg"
-                  :class="{
-                    'bg-white' : activeSlide === slide.id,
-                    'ring-1' : activeSlide === slide.id,
-                    'ring-secondary' : activeSlide === slide.id,
-                    'bg-slate-300' : activeSlide !== slide.id,
-                  }"
-                  x-on:click="activeSlide = slide.id"
-                ></button>
-              </template>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- tutup slide -->
       <!-- produk kategori -->
       <section class="kekraf-category-product">
@@ -169,7 +74,10 @@
 
           <div class="row-grid">
             <div data-aos="fade-up" data-aos-delay="100">
-              <a href="#" class="component-categories">
+              <a
+                href="#"
+                class="component-categories focus:border-2 focus:border-solid focus:border-primary focus:text-primary focus:ring-1 focus:ring-primary"
+              >
                 <div class="category-icon">
                   <img src="../images/food-tray 1.svg" alt="" class="h-14" />
                 </div>
