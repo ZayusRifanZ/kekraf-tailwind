@@ -12,6 +12,7 @@
 @import "component/button.css";
 
 @import "pages/home.css";
+@import "pages/login.css";
 
 /* body {
   min-height: 2000px;

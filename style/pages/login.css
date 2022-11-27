@@ -1,0 +1,31 @@
+.page-auth .kekraf-login {
+  @apply mt-28;
+}
+/* { */
+.page-auth .kekraf-login div.row-auth {
+  @apply grid grid-cols-1 gap-5 md:grid-cols-2;
+}
+/* -{ */
+.page-auth .kekraf-login div.row-auth img {
+  @apply opacity-50 md:opacity-100;
+}
+.page-auth .kekraf-login div.row-auth div.auth-content {
+  @apply container absolute left-0 max-w-full md:static md:px-0;
+}
+/* --{ */
+.page-auth .kekraf-login div.row-auth div.auth-content h5 {
+  @apply mt-5 mb-4 text-center text-2xl font-semibold text-secondary md:text-left;
+}
+.page-auth .kekraf-login div.row-auth div.auth-content label {
+  @apply mb-2 block text-base text-secondary;
+}
+.page-auth .kekraf-login div.row-auth div.auth-content input.form-control {
+  @apply block w-full rounded-md bg-slate-100 p-2;
+}
+.page-auth .kekraf-login div.row-auth div.auth-content div.row-btn-auth {
+  @apply mt-10 grid grid-cols-1 gap-4 md:grid-cols-2;
+}
+
+/* --} */
+/* -} */
+/* } */

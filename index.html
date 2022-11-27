@@ -61,64 +61,39 @@
       <!-- login -->
       <section class="kekraf-login mt-28" data-aos="fade-up">
         <div class="container max-w-full">
-          <div class="row row-login grid grid-cols-1 gap-5 md:grid-cols-2">
-            <div class="col-6 text-center">
-              <img
-                src="images/login-placeholder.jpg"
-                alt=""
-                class="align-content-center opacity-50"
-              />
-            </div>
-            <div
-              class="col-lg-6 container absolute left-0 max-w-full md:static md:px-0"
-            >
-              <h5
-                class="mt-5 mb-4 text-center text-2xl font-semibold text-secondary md:text-left"
-              >
-                Masuk ke akun anda
-              </h5>
+          <div class="row-auth">
+            <img src="images/login-placeholder.jpg" alt="" class="" />
+
+            <div class="auth-content">
+              <h5>Masuk ke akun anda</h5>
               <form action="" class="mt-3">
                 <div class="form-group mb-4">
-                  <label for="" class="mb-2 block text-base text-secondary"
-                    >Email</label
-                  >
+                  <label for="">Email</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="masukkan email anda"
-                    class="form-control block w-full rounded-md bg-slate-100 p-2"
+                    class="form-control"
                   />
                 </div>
                 <div class="form-group mb-4">
-                  <label for="" class="mb-2 block text-base text-secondary"
-                    >Password</label
-                  >
+                  <label for="">Password</label>
                   <input
                     type="password"
                     name="password"
                     id="password"
                     placeholder="masukkkan password anda"
-                    class="form-control block w-full rounded-md bg-slate-100 p-2"
+                    class="form-control"
                   />
                 </div>
-                <div
-                  class="row btn-auth-login mt-10 grid grid-cols-1 gap-4 md:grid-cols-2"
-                >
-                  <div class="col-lg-6 rounded-md bg-white">
-                    <a
-                      href="dashboard.html"
-                      class="block rounded-md bg-primary py-2 text-center text-white hover:bg-opacity-75"
+                <div class="row-btn-auth">
+                  <div class="rounded-md bg-white">
+                    <a href="dashboard.html" class="btn-auth btn-primary"
                       >Masuk</a
                     >
                   </div>
-                  <div class="col-lg-6">
-                    <a
-                      href="register.html"
-                      class="block rounded-md bg-slate-200 py-2 text-center text-soft-greyBlue hover:bg-slate-300"
-                      >Daftar</a
-                    >
-                  </div>
+                  <a href="register.html" class="btn-auth btn-light">Daftar</a>
                 </div>
               </form>
             </div>
@@ -126,17 +101,17 @@
         </div>
       </section>
       <!-- tutup login -->
-      <footer>
-        <div class="container max-w-full">
-          <div class="mt-32 border-t-[1px] border-solid border-t-soft-greyBlue">
-            <p class="mb-16 pt-4 pb-2 text-center text-soft-greyBlue">
-              &copy; KEKRAF (Katalog Ekonomi Keratif) 2021
-              <a href="#">kekraf@example.com</a>
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
+    <footer>
+      <div class="container max-w-full">
+        <div class="mt-32 border-t-[1px] border-solid border-t-soft-greyBlue">
+          <p class="mb-16 pt-4 pb-2 text-center text-soft-greyBlue">
+            &copy; KEKRAF (Katalog Ekonomi Keratif) 2021
+            <a href="#">kekraf@example.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script src="./scripts/navbar.js"></script>
     <script src="./vendor/aos.js"></script>

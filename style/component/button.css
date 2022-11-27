@@ -6,3 +6,15 @@
 .btn-nav.btn-primary {
   @apply block rounded-md bg-primary p-2 text-center text-white hover:opacity-75  md:inline;
 }
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-opacity-75;
+}
+.btn-light {
+  @apply bg-slate-200 text-soft-greyBlue hover:bg-slate-300;
+}
+
+/* auth btn */
+.btn-auth {
+  @apply block rounded-md  py-2 text-center;
+}
