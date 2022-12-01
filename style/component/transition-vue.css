@@ -1,0 +1,12 @@
+.swipe-move,
+.swipe-enter-active,
+.swipe-leave-active {
+  transition: all 0.5s ease-out;
+  /* opacity: 100; */
+}
+
+.swipe-enter-from, .swipe-leave-to
+      /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+  /* transform: translateX(30px); */
+}
