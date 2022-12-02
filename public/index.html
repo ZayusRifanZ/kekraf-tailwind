@@ -8,10 +8,7 @@
 
     <!-- tailwindcss style -->
     <link rel="stylesheet" href="../style/main-output.css" />
-    <link href="../vendor/aos.css" rel="stylesheet" />
-
-    <!-- vue version 3 -->
-    <script src="../vendor/vue/vue.global.js"></script>
+    <link href="../vendor/aos/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav
@@ -78,11 +75,16 @@
               tag="div"
               class="tsGroup"
               v-for="(slide, index) in slides"
-              :key="slide.id"
               :class="isActiveAll(slide)"
             >
+              <!-- :key="activeSlide" -->
               <!-- v-show="activeSlide === slide.id" -->
-              <img :src="slide.image" alt="" class="w-full" />
+              <img
+                :src="slide.image"
+                :key="activeSlide"
+                alt=""
+                class="w-full"
+              />
               <!-- <template v-show="activeSlide === slide.id" key="activeSlide">
           </template> -->
             </transition-group>
@@ -137,7 +139,7 @@
             </div>
             <!-- button -->
             <div class="absolute left-1/2 bottom-2 -ml-[60px] flex px-2 py-2">
-              <template v-for="slide in slides" :key="slide.id">
+              <template v-for="slide in slides">
                 <button
                   class="mx-2 mt-4 mb-2 h-2 w-2 flex-1 overflow-hidden rounded-full bg-slate-200 transition-colors duration-200 ease-out hover:bg-slate-600 hover:shadow-lg"
                   :class="isActiveBtnSlide(slide)"
@@ -472,29 +474,28 @@
     </footer>
 
     <script src="../scripts/navbar.js"></script>
-    <script src="../vendor/aos.js"></script>
+    <script src="../vendor/aos/aos.js"></script>
+    <script src="../vendor/vue/vue.js"></script>
+
     <script>
       AOS.init();
 
       const slideCarouselApp = [
         { id: 1, image: "../images/banner.jpg" },
-        { id: 2, image: "../images/banner.jpg" },
-        { id: 3, image: "../images/banner.jpg" },
-        // { id: 2, image: "https://picsum.photos/id/13/4000/1500" },
-        // { id: 3, image: "https://picsum.photos/id/16/4000/1500" },
+        // { id: 2, image: "../images/banner.jpg" },
+        // { id: 3, image: "../images/banner.jpg" },
+        { id: 2, image: "https://picsum.photos/id/13/4000/1500" },
+        { id: 3, image: "https://picsum.photos/id/16/4000/1500" },
         // { id: 4, image: "https://picsum.photos/id/19/4000/1500" },
         // { id: 5, image: "https://picsum.photos/id/29/4000/1500" },
       ];
-      const { createApp } = Vue;
+      // const { createApp } = Vue;
 
-      const carousel = createApp({
-        data() {
-          return {
-            activeSlide: 1,
-            head: "Carousel ke dua",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sapiente.",
-            slides: slideCarouselApp,
-          };
+      const carousel = new Vue({
+        el: "#carousel-app",
+        data: {
+          activeSlide: 1,
+          slides: slideCarouselApp,
         },
         created() {
           // time change 10s
@@ -547,7 +548,7 @@
           },
         },
       });
-      carousel.mount("#carousel-app");
+      // carousel.mount("#carousel-app");
     </script>
   </body>
 </html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+
+    <!-- tailwindcss style -->
+    <link rel="stylesheet" href="../style/main-output.css" />
+    <link href="./vendor/aos/aos.css" rel="stylesheet" />
+
+    <!-- vue version 3 -->
+    <!-- <script src="../vendor/vue/vue.global.js"></script> -->
+    <!-- <script src="https://unpkg.com/vue-toasted"></script> -->
+  </head>
+  <body>
+    <nav
+      class="header navbar-fixed-top"
+      data-aos="fade-down"
+      data-aos-delay="50"
+    >
+      <div class="navbar">
+        <a href="./public/index.html">
+          <img src="./images/logo.svg" alt="logo kekraf" />
+        </a>
+
+        <div class="humberger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="nav-menu-main">
+          <ul class="nav-menu-link">
+            <li class="nav-item">
+              <a href="./public/index.html" class="nav-link">Beranda </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Kategori </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Reward </a>
+            </li>
+          </ul>
+          <ul class="nav-menu-btn">
+            <form action="" class="">
+              <input
+                type="text"
+                name="search"
+                placeholder="Cari Produk.."
+                class="search-product"
+              />
+            </form>
+            <li class="nav-item">
+              <a class="btn-nav btn-outline-primary" href="#"> Daftar </a>
+            </li>
+            <li class="nav-item">
+              <a class="btn-nav btn-primary" href="#">Masuk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-content page-auth" id="register">
+      <section class="kekraf-login mt-28">
+        <div class="container max-w-full">
+          <div class="row row-login flex justify-center">
+            <div class="col-lg-4 mx-10 w-full md:mx-0 md:w-1/2 lg:w-1/4">
+              <h5 class="text-center text-2xl font-semibold text-secondary">
+                Buat akun anda
+              </h5>
+              <form action="" class="mt-3">
+                <div class="form-group">
+                  <label for="" class="mb-1.5 block text-base text-secondary"
+                    >Nama panjang</label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control is-valid block w-full rounded-lg bg-slate-100 py-1.5 px-4 text-greyBlue hover:text-soft-greyBlue"
+                    v-model="name"
+                    autofocus
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="" class="mb-1.5 block text-base text-secondary"
+                    >Alamat Email</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control is-invalid block w-full rounded-lg bg-slate-100 py-1.5 px-4 text-greyBlue hover:text-soft-greyBlue"
+                    v-model="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="" class="mb-1.5 block text-base text-secondary"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control block w-full rounded-lg bg-slate-100 py-1.5 px-4 text-greyBlue hover:text-soft-greyBlue"
+                    v-model="password"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="" class="mb-1.5 block text-base text-secondary"
+                    >Toko</label
+                  >
+                  <p class="text-muted text-base text-greyBlue">
+                    Apakah anda ingin membuka toko ?
+                  </p>
+                  <div
+                    class="custom-control custom-radio custom-control-inline inline-flex space-x-2"
+                  >
+                    <input
+                      type="radio"
+                      name="is_store_open"
+                      id="openStoreTrue"
+                      class="custom-control-input"
+                      v-model="is_store_open"
+                      :value="true"
+                    />
+                    <label for="openStoreTrue" class="custom-control-label mx-2"
+                      >Iya, boleh</label
+                    >
+                  </div>
+
+                  <div
+                    class="custom-control custom-radio custom-control-inline ml-3 inline-flex space-x-2"
+                  >
+                    <input
+                      id="openStoreFalse"
+                      name="is_store_open"
+                      type="radio"
+                      class="custom-control-input"
+                      v-model="is_store_open"
+                      :value="false"
+                    />
+                    <label for="openStoreFalse" class="custom-control-label"
+                      >Tidak</label
+                    >
+                  </div>
+                </div>
+
+                <div class="form-group" v-if="is_store_open">
+                  <label for="" class="mb-1.5 block text-base text-secondary"
+                    >Nama Toko</label
+                  >
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control block w-full rounded-lg bg-slate-100 py-1.5 px-4 text-greyBlue hover:text-soft-greyBlue"
+                  />
+                </div>
+
+                <div class="form-group mb-4" v-if="is_store_open">
+                  <label for="" class="mb-1.5 block text-base text-secondary"
+                    >Kategori</label
+                  >
+                  <select
+                    name=""
+                    id=""
+                    class="form-control block w-full rounded-lg bg-slate-100 py-1.5 px-4 text-greyBlue hover:text-soft-greyBlue"
+                  >
+                    <option value="" selected>Pilih kategori</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                  </select>
+                </div>
+                <a
+                  href="register-success.html"
+                  class="btn btn-primary btn-block my-3 block rounded-md py-2 px-4 text-center"
+                  >Daftar</a
+                >
+                <span class="text-secondary">
+                  Sudah memiliki akun kekraf ?
+                </span>
+                <a href="index.html" class="text-blue-500 hover:text-primary"
+                  >Masuk</a
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container max-w-full">
+        <div class="mt-32 border-t-[1px] border-solid border-t-soft-greyBlue">
+          <p class="mb-16 pt-4 pb-2 text-center text-soft-greyBlue">
+            &copy; KEKRAF (Katalog Ekonomi Keratif) 2021
+            <a href="#">kekraf@example.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/navbar.js"></script>
+    <script src="./vendor/aos/aos.js"></script>
+    <script src="./vendor/vue/vue.js"></script>
+    <script src="https://unpkg.com/vue-toasted"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      // const { createApp } = Vue;
+      Vue.use(Toasted);
+
+      // const register = createApp({
+      //   mounted() {
+      //     AOS.init();
+      //     this.$toasted.error(
+      //       "Maaf email yang anda masukkan sudah terdaftar di sistem kami",
+      //       {
+      //         position: "top-center",
+      //         className: "rounded",
+      //         duration: 2000,
+      //       }
+      //     );
+      //   },
+      //   data() {
+      //     return {
+      //       name: "Zayus Rifan Zafarani",
+      //       email: "zayus@example.com",
+      //       password: "",
+      //       is_store_open: true,
+      //       store_name: "",
+      //     };
+      //   },
+      // });
+      // register.mount("#register");
+      var register = new Vue({
+        el: "#register",
+        mounted() {
+          AOS.init();
+          this.$toasted.error(
+            "Maaf email yang anda masukkan sudah terdaftar di sistem kami",
+            {
+              position: "top-center",
+              className: "rounded",
+              duration: 2000,
+            }
+          );
+        },
+        data: {
+          name: "Jhon Doe",
+          email: "jhon.doe@example.com",
+          password: "",
+          is_store_open: true,
+          store_name: "",
+        },
+      });
+    </script>
+  </body>
+</html>
