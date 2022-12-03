@@ -20,7 +20,7 @@
   @apply mb-2 block text-base text-secondary;
 }
 .page-auth .kekraf-login div.row-auth div.auth-content input.form-control {
-  @apply block w-full rounded-md bg-slate-100 p-2;
+  @apply block w-full rounded-md bg-slate-100 py-2 px-4;
 }
 .page-auth .kekraf-login div.row-auth div.auth-content div.row-btn-auth {
   @apply mt-10 grid grid-cols-1 gap-4 md:grid-cols-2;

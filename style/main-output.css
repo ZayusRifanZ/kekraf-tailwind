@@ -443,6 +443,9 @@ video {
     padding-left: 5rem;
   }
 }
+.pointer-events-none{
+  pointer-events: none;
+}
 .absolute{
   position: absolute;
 }
@@ -452,11 +455,17 @@ video {
 .top-1\/2{
   top: 50%;
 }
+.left-2{
+  left: 0.5rem;
+}
 .left-1\/2{
   left: 50%;
 }
 .bottom-2{
   bottom: 0.5rem;
+}
+.left-1{
+  left: 0.25rem;
 }
 .top-0{
   top: 0px;
@@ -511,6 +520,12 @@ video {
 .ml-3{
   margin-left: 0.75rem;
 }
+.-mt-\[7px\]{
+  margin-top: -7px;
+}
+.-mt-3{
+  margin-top: -0.75rem;
+}
 .mt-4{
   margin-top: 1rem;
 }
@@ -519,6 +534,9 @@ video {
 }
 .mb-2{
   margin-bottom: 0.5rem;
+}
+.mb-56{
+  margin-bottom: 14rem;
 }
 .block{
   display: block;
@@ -532,6 +550,9 @@ video {
 .h-14{
   height: 3.5rem;
 }
+.h-6{
+  height: 1.5rem;
+}
 .h-12{
   height: 3rem;
 }
@@ -543,6 +564,9 @@ video {
 }
 .w-full{
   width: 100%;
+}
+.w-6{
+  width: 1.5rem;
 }
 .w-12{
   width: 3rem;
@@ -594,6 +618,9 @@ video {
 .border-solid{
   border-style: solid;
 }
+.border-none{
+  border-style: none;
+}
 .border-t-soft-greyBlue{
   --tw-border-opacity: 1;
   border-top-color: rgb(134 147 169 / var(--tw-border-opacity));
@@ -625,6 +652,12 @@ video {
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
+.bg-\[0\.5rem_center\]{
+  background-position: 0.5rem center;
+}
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
 .p-1{
   padding: 0.25rem;
 }
@@ -653,6 +686,12 @@ video {
 }
 .pb-2{
   padding-bottom: 0.5rem;
+}
+.pl-10{
+  padding-left: 2.5rem;
+}
+.pr-2{
+  padding-right: 0.5rem;
 }
 .text-center{
   text-align: center;
@@ -902,10 +941,6 @@ nav.header{
   border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-  background-image: url(../images/search.svg);
-  background-size: 1.5rem;
-  background-position: 0.5rem center;
-  background-repeat: no-repeat;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2.5rem;
@@ -913,7 +948,6 @@ nav.header{
 }
 @media (min-width: 768px){
   .header .nav-menu-btn input.search-product{
-    margin-top: -0.625rem;
     width: 8rem;
   }
 }
@@ -1327,7 +1361,10 @@ nav.header{
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .page-auth .kekraf-login div.row-auth div.auth-content div.row-btn-auth{
   margin-top: 2.5rem;
@@ -1386,6 +1423,14 @@ nav.header{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(62 107 179 / var(--tw-ring-opacity));
 }
+.group:focus-within .group-focus-within\:text-blue-500{
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+.group:hover .group-hover\:text-red-400{
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
 @media (prefers-color-scheme: dark){
   .dark\:text-gray-800{
     --tw-text-opacity: 1;
@@ -1405,12 +1450,24 @@ nav.header{
     margin-left: 0px;
     margin-right: 0px;
   }
+  .md\:-mt-2\.5{
+    margin-top: -0.625rem;
+  }
+  .md\:-mt-2{
+    margin-top: -0.5rem;
+  }
   .md\:w-1\/2{
     width: 50%;
+  }
+  .md\:w-32{
+    width: 8rem;
   }
 }
 @media (min-width: 1024px){
   .lg\:w-1\/4{
     width: 25%;
+  }
+  .lg\:w-full{
+    width: 100%;
   }
 }
