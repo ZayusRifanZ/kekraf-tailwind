@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+
+    <link href="../vendor/aos/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/main-output.css" />
+  </head>
+  <body>
+    <nav
+      class="header navbar-fixed-top"
+      data-aos="fade-down"
+      data-aos-delay="50"
+    >
+      <div class="navbar">
+        <a href="index.html">
+          <img src="../images/logo.svg" alt="logo kekraf" />
+        </a>
+
+        <div class="humberger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="nav-menu-main">
+          <ul class="nav-menu-link">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link">Beranda </a>
+            </li>
+            <li class="nav-item">
+              <a href="categories.html" class="nav-link"> Kategori </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Reward </a>
+            </li>
+          </ul>
+          <ul class="nav-menu-btn">
+            <li class="nav-item">
+              <form action="" class="group relative -mt-[7px]">
+                <svg
+                  fill="none"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="pointer-events-none absolute top-1/2 left-2 -mt-3 h-6 w-6 text-soft-greyBlue group-focus-within:text-blue-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Cari Produk.."
+                  class="search-product"
+                />
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="btn-nav btn-outline-primary" href="#"> Daftar </a>
+            </li>
+            <li class="nav-item">
+              <a class="btn-nav btn-primary" href="../index.html">Masuk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-content page-cart">
+      <!-- breadCrumbs -->
+      <section
+        class="kekraf-breadcrumbs"
+        data-aos="fade-down"
+        data-aos-delay="100"
+      >
+        <div class="container max-w-full">
+          <div class="row">
+            <div class="col-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb flex space-x-2">
+                  <li
+                    class="breadcrumb-item text-soft-greyBlue hover:underline"
+                  >
+                    <a href="/index.html">Beranda</a>
+                  </li>
+                  <li class="text-soft-greyBlue"><span>/</span></li>
+                  <li class="breadcrumb-item active text-secondary">
+                    Keranjang
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- tutup breadCrumbs -->
+
+      <!-- cart -->
+      <section class="kekraf-cart">
+        <div class="container max-w-full">
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12 table-responsive scroll-auto">
+              <table class="table-cart table border-separate border-spacing-3">
+                <thead style="border: 1px solid #f4f4f4">
+                  <tr>
+                    <th scope="col">Gambar</th>
+                    <th scope="col">Produk &amp; Seller</th>
+                    <th scope="col">Berat &amp; Qty</th>
+                    <th scope="col">Harga</th>
+                    <th scope="col">Menu</th>
+                  </tr>
+                </thead>
+                <tbody style="border: 1px solid #f4f4f4" class="align-top">
+                  <tr>
+                    <td style="width: 15%">
+                      <img
+                        src="../images/pencil-1.jpg"
+                        alt=""
+                        class="cart-image rounded-md"
+                      />
+                    </td>
+                    <td style="width: 35%">
+                      <div
+                        class="product-title"
+                        title="Pencil madjdnj mdad amd mdakmdkadmka"
+                      >
+                        Pencil madjdnj mdad amd mdakmdkadmka
+                      </div>
+                      <div class="product-subtitle">Toko Naura_store</div>
+                    </td>
+                    <td style="width: 15%">
+                      <div class="product-title">3 qty</div>
+                      <div class="product-subtitle">100gram</div>
+                    </td>
+                    <td style="width: 20%">
+                      <div class="product-title">Rp 20.000</div>
+                      <div class="product-subtitle">IDR</div>
+                    </td>
+                    <td style="width: 15%">
+                      <a href="#" class="btn btn-romove-cart">Remove </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 15%">
+                      <img
+                        src="../images/pencil-3.jpg"
+                        alt=""
+                        class="cart-image"
+                      />
+                    </td>
+                    <td style="width: 35%">
+                      <div class="product-title">Pencil 2 beli aja</div>
+                      <div class="product-subtitle">Toko Naura_store</div>
+                    </td>
+                    <td style="width: 15%">
+                      <div class="product-title">3 qty</div>
+                      <div class="product-subtitle">100gram</div>
+                    </td>
+                    <td style="width: 20%">
+                      <div class="product-title">Rp 20.000</div>
+                      <div class="product-subtitle">IDR</div>
+                    </td>
+                    <td style="width: 15%">
+                      <a href="#" class="btn btn-romove-cart">Remove </a>
+                    </td>
+                  </tr>
+                  <!-- <tr style="background-color: #f44150">
+                    <td colspan="5" class="text-center text-white">
+                      <small>Rincian pengiriman harus diisi</small>
+                    </td>
+                  </tr> -->
+                  <tr class="bg-light">
+                    <td></td>
+                    <td>
+                      <div class="product-title">Kurir pengiriman</div>
+                      <div>
+                        <!-- <select name="" id="" class="form-control">
+                          <option value="">JNE</option>
+                          <option value="">Tiki</option>
+                          <option value="">Pos</option>
+                        </select> -->
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="exampleRadios1"
+                            value="option1"
+                            checked
+                          />
+                          <label class="form-check-label" for="exampleRadios1">
+                            JNE
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="exampleRadios2"
+                            value="option2"
+                          />
+                          <label class="form-check-label" for="exampleRadios2">
+                            TIKI
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="exampleRadios2"
+                            value="option2"
+                          />
+                          <label class="form-check-label" for="exampleRadios2">
+                            Pos
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <div class="product-title">Service Kurir</div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="inlineRadio1"
+                          value="option1"
+                        />
+                        <label class="form-check-label" for="inlineRadio1"
+                          >Oke - Rp 28,000</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="inlineRadio2"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="inlineRadio2"
+                          >Reg - Rp 37,000</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="inlineRadio2"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="inlineRadio2"
+                          >Yes - Rp 72,000</label
+                        >
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+                <tbody style="border: 1px solid #f4f4f4">
+                  <tr>
+                    <td style="width: 15%">
+                      <img
+                        src="../images/CocaCola.jpg"
+                        alt=""
+                        class="cart-image"
+                      />
+                    </td>
+                    <td style="width: 35%">
+                      <div class="product-title">CocaCola</div>
+                      <div class="product-subtitle">Toko drinkandfood</div>
+                    </td>
+                    <td style="width: 15%">
+                      <div class="product-title">1 qty</div>
+                      <div class="product-subtitle">200gram</div>
+                    </td>
+                    <td style="width: 20%">
+                      <div class="product-title">Rp 100.000</div>
+                      <div class="product-subtitle">IDR</div>
+                    </td>
+                    <td style="width: 15%">
+                      <a href="#" class="btn btn-romove-cart">Remove </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="width: 15%">
+                      <img
+                        src="../images/QuokkaBotolKopi.jpg"
+                        alt=""
+                        class="cart-image"
+                      />
+                    </td>
+                    <td style="width: 35%">
+                      <div class="product-title">Quokka Botol Minum Kopi</div>
+                      <div class="product-subtitle">Toko drinkandfood</div>
+                    </td>
+                    <td style="width: 15%">
+                      <div class="product-title">1 qty</div>
+                      <div class="product-subtitle">100gram</div>
+                    </td>
+                    <td style="width: 20%">
+                      <div class="product-title">Rp 300.000</div>
+                      <div class="product-subtitle">IDR</div>
+                    </td>
+                    <td style="width: 15%">
+                      <a href="#" class="btn btn-romove-cart">Remove </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-12">
+              <hr />
+            </div>
+            <div class="col-12">
+              <h2 class="mb-4">Rincian Pengiriman</h2>
+            </div>
+          </div>
+          <div class="row mb-2" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="addressOne">Alamat 1</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addressOne"
+                  name="addressOne"
+                  value="Setra Duta Cemara"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="addressTwo">Alamat 2</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addressTwo"
+                  name="addressTwo"
+                  value="Blok B2 No. 34"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="province">Provinsi</label>
+                <select name="province" id="province" class="form-control">
+                  <option value="West Java">West Java</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="city">Kota</label>
+                <select name="city" id="city" class="form-control">
+                  <option value="Bandung">Bandung</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="postalCode">Kode Pos</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="postalCode"
+                  name="postalCode"
+                  value="123999"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="country">Negara</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="country"
+                  name="country"
+                  value="Indonesia"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="mobile">No Hp</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="mobile"
+                  name="mobile"
+                  value="+628 2020 11111"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-12">
+              <hr />
+            </div>
+            <div class="col-12">
+              <h2 class="mb-2">Informasi Pembayaran</h2>
+            </div>
+          </div>
+          <div class="row" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-4 col-md-2">
+              <div class="product-title">Rp 10</div>
+              <div class="product-subtitle">Pajak</div>
+            </div>
+            <div class="col-4 col-md-3">
+              <div class="product-title">Rp 2.800</div>
+              <div class="product-subtitle">Asuransi Produk</div>
+            </div>
+            <div class="col-4 col-md-2">
+              <div class="product-title">Rp 36.000</div>
+              <div class="product-subtitle">Kirim ke Jakarta</div>
+            </div>
+            <div class="col-4 col-md-2">
+              <div class="product-title text-success">Rp 370.810</div>
+              <div class="product-subtitle">Total</div>
+            </div>
+            <div class="col-8 col-md-3">
+              <a href="/success.html" class="btn btn-success btn-block"
+                >Checkout Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- tutup cart -->
+    </div>
+
+    <footer>
+      <div class="container max-w-full">
+        <div class="mt-32 border-t-[1px] border-solid border-t-soft-greyBlue">
+          <p class="mb-16 pt-4 pb-2 text-center text-soft-greyBlue">
+            &copy; KEKRAF (Katalog Ekonomi Keratif) 2021
+            <a href="#">kekraf@example.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/navbar.js"></script>
+    <script src="../vendor/aos/aos.js"></script>
+    <script src="../vendor/vue/vue.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+  <!-- <script src="/vendor/jquery/jquery-3.6.0.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/script/navbar-scroll.js"></script> -->
+</html>

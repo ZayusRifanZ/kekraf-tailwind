@@ -18,3 +18,10 @@
 .btn-auth {
   @apply block rounded-md  py-2 text-center;
 }
+
+.btn {
+  @apply rounded-md py-2 px-4 hover:ring-1 hover:ring-primary;
+}
+.btn-romove-cart {
+  @apply rounded-md bg-danger py-2 px-4 text-white hover:bg-opacity-80;
+}

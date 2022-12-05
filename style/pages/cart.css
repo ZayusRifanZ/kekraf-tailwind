@@ -1,0 +1,6 @@
+.product-title {
+  @apply text-base font-medium text-secondary line-clamp-2 md:text-lg;
+}
+.product-subtitle {
+  @apply text-sm text-soft-greyBlue;
+}
